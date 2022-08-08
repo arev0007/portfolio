@@ -20,11 +20,12 @@
         <header>
             <!-- Add a title--> 
             <h1> About</h1>
+            <div id="main-nav">
             <!-- **** Creates navbar using bootstrap **** -->
             <!--improve accesibility by using the role navigation and aria-->
             <nav role="navigation" class="navbar navbar-expand-md" style="background-color: #D63440;">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+                  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="Text logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -49,13 +50,15 @@
                   </div>
                 </div>
               </nav>
+              </div>
               <!-- **** Banner **** -->
             <!--improve accesibility by using the role banner-->
             <!-- Add an image as a banner--> 
             <div role="banner" class="banner">
-                <img class="w-100" src="images/about/about-banner.jpg" alt="street">
+                <img class="img-fluid" src="images/about/about-banner.jpg" alt="street">
             </div>
         </header>
+        <div id="main-content">
         <!-- Creates a box that contains image and text-->
         <div class="about-content">
                 <img class="w-100" src="images/about/about-profile.jpg" alt="profile">
@@ -68,6 +71,7 @@
                     </p>
                 </div>
         </div>
+      </div>
         <!--improve accesibility by using the role contentinfo-->
         <footer  role="contentinfo">
           <!--use grid to set the footer that contains social media and contact information -->

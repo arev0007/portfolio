@@ -20,11 +20,12 @@
         <header>
             <!-- Add a title--> 
             <h1> Creative Minds</h1>
+            <div id="main-nav">
             <!-- **** Creates navbar using bootstrap **** -->
               <!--improve accesibility by using the role navigation and aria-->
                 <nav role="navigation" class="navbar navbar-expand-md">
                     <div class="container-fluid">
-                      <a class="navbar-brand w-50 p-3" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+                      <a class="navbar-brand w-50 p-3" href="index.html"><img class="logo" src="images/logo.png" alt="Text logo"></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -49,12 +50,34 @@
                       </div>
                     </div>
                   </nav>
+                </div>
             <!-- **** Banner **** -->
             <!--improve accesibility by using the role banner-->
             <div role="banner" class=" container-xl banner">
-                <img src="images/home/home-banner.jpg" alt="buildings" class="img-banner">
+                
+              <picture>
+                <!-- Landscape viewport -->
+                <source srcset="images/home/banner/home-banner-480_x_259.jpg,
+                images/home/banner/home-banner-960_x_519.jpg 2x,
+                images/home/banner/home-banner-1440_x_779.jpg 3x" media="(max-width: 480px)">
+          
+                <source srcset="images/home/banner/home-banner-720_x_389.jpg,
+                images/home/banner/home-banner-1440_x_779.jpg 2x,
+                images/home/banner/home-banner-2160_x_1168.jpg 3x" media="(max-width: 720px)">
+          
+                <source srcset="images/home/banner/home-banner-960_x_519.jpg,
+                images/home/banner/home-banner-1920_x_1038.jpg 2x,
+                images/home/banner/home-banner-2880_x_1558.jpg 3x" media="(max-width: 960px)">
+              
+                <source srcset="images/home/banner/home-banner-1440_x_779.jpg,
+                images/home/banner/home-banner-2880_x_1558.jpg 2x,
+                images/home/banner/home-banner-4320_x_2337.jpg 3x" media="(max-width: 1440px)">
+              
+               
+              <img src="images/home/banner/home-banner-1440_x_779.jpg" alt="buildings" class="img-banner">
             </div>
         </header>
+        <div id="main-content">
         <!-- **** About **** -->
         <!--use grid to create About section-->
         <!--improve accesibility by using the role grid-->
@@ -109,7 +132,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-
+        </div>
         <!--improve accesibility by using the role contentinfo-->
         <footer role="contentinfo">
             <!--use grid to set the footer that contains social media and contact information -->
@@ -118,7 +141,7 @@
                 <div role="grid" class="container-social=media">
                     <div class="row">
                         <div class="col">
-                            <a href="https://www.instagram.com/" target="_blank" class="btn-social btn-behance"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.instagram.com/instagram/" target="_blank" class="btn-social btn-behance"><i class="fa-brands fa-square-instagram"></i></a>
                         </div>
                     </div>
                     <div class="row">
