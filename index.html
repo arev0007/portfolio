@@ -12,11 +12,17 @@
 <body>
     <!--creates a container box for styling purposes--> 
     <div class="container-xl home-page">
+      <!-- creates skip links -->
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
         <header>
             <!-- Add a title--> 
             <h1> Creative Minds</h1>
-            <!-- **** Creates navbar using bootstrap **** -->  
-                <nav class="navbar navbar-expand-md">
+            <!-- **** Creates navbar using bootstrap **** -->
+              <!--improve accesibility by using the role navigation and aria-->
+                <nav role="navigation" class="navbar navbar-expand-md">
                     <div class="container-fluid">
                       <a class="navbar-brand w-50 p-3" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +50,15 @@
                     </div>
                   </nav>
             <!-- **** Banner **** -->
-            <div class=" container-xl banner">
+            <!--improve accesibility by using the role banner-->
+            <div role="banner" class=" container-xl banner">
                 <img src="images/home/home-banner.jpg" alt="buildings" class="img-banner">
             </div>
         </header>
         <!-- **** About **** -->
-        <!--use grid to create About section--> 
-        <div class="container-fluid">
+        <!--use grid to create About section-->
+        <!--improve accesibility by using the role grid-->
+        <div role="grid" class="container-fluid">
             <div class="row">
               <div class="col-sm-4 col-sm-push-8 about-text">
                 <h2>About</h2>
@@ -78,7 +86,8 @@
               <div class="carousel-item active">
                 <div class="w-100 d-flex">
                     <img src="images/home/home-branding.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <!--improve accesibility by using the role complementary-->
+                    <div role="complementary" class="carousel-caption d-none d-md-block">
                         <p>McLaren has been pioneering and innovating in the competitive world of Formula 1, 
                             forging a formidable reputation which has seen the racing team win 20 World Championships and over 180 races.</p>
                         </div>
@@ -101,11 +110,12 @@
             </button>
           </div>
 
-        
-        <footer>
+        <!--improve accesibility by using the role contentinfo-->
+        <footer role="contentinfo">
             <!--use grid to set the footer that contains social media and contact information -->
             <div class="container-fluid">
-                <div class="container-social=media">
+              <!--improve accesibility by using the role grid-->
+                <div role="grid" class="container-social=media">
                     <div class="row">
                         <div class="col">
                             <a href="https://www.instagram.com/" target="_blank" class="btn-social btn-behance"><i class="fa-brands fa-square-instagram"></i></a>
@@ -122,9 +132,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col text-center contact-box">
-                    <p>aldanasabrina94@gmail.com</p>
-                <p>343-297-4555</p>
+                <div class="col text-center contact-box" itemscope itemtype="https://schema.org/Person">
+                  <p itemprop="email">aldanasabrina94@gmail.com</p>
+                  <p itemprop="telephone">343-297-4555</p>
                 </div>
               </div>
         </footer>

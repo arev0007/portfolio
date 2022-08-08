@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
 <body>
+     <!--creates a container box for styling purposes-->
     <div class="container-xl creative-page">
+      <!-- creates skip links -->
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
         <header>
             <!-- Add a title--> 
             <h1>Creative</h1>
-            <nav class="navbar navbar-expand-md" style="background-color: #607FCC;">
+            <!-- **** Creates navbar using bootstrap **** -->
+            <!--improve accesibility by using the role navigation and aria-->
+            <nav role="navigation" class="navbar navbar-expand-md" style="background-color: #607FCC;">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +49,16 @@
                   </div>
                 </div>
               </nav>
+            <!-- **** Banner **** -->
+            <!--improve accesibility by using the role banner-->
             <!-- Add an image as a banner--> 
-            <div class="banner">
-                <img src="images/creative/pexels-anni-roenkae-2156881-crative-banner.jpg" alt="texture">
+            <div role="banner" class="banner">
+                <img class="w-100" src="images/creative/pexels-anni-roenkae-2156881-crative-banner.jpg" alt="texture">
             </div>
         </header>
+        
         <!-- Creates a box for styling porposes--> 
-        <div class=" box1">
+        <div class="box1">
             <h2>Multimedia Art</h2>
             <!-- Creates a box for styling porposes--> 
             <div class="img-ma">
@@ -60,16 +71,18 @@
         <div class="sound motion">
             <h2>Sound Motion</h2>
             <!-- Creates a box for styling porposes--> 
-            <div class="img-sound">
-                <img src="images/creative/pexels-pixabay-257904-creative.jpg" alt="audio software">
-                <img src="images/creative/pexels-pixabay-50570-creative.jpg" alt="texture">
-                <img src="images/creative/pexels-vlad-bagacian-1337753-creative.jpg" alt="mobile & headphones">
+            <div class="d-flex justify-content-around img-sound">
+                <img w-75 p-3 src="images/creative/pexels-pixabay-257904-creative.jpg" alt="audio software">
+                <img w-75 p-3 src="images/creative/pexels-pixabay-50570-creative.jpg" alt="texture">
+                <img w-75 p-3 src="images/creative/pexels-vlad-bagacian-1337753-creative.jpg" alt="mobile & headphones">
             </div> 
         </div>
-        <footer>
+        <!--improve accesibility by using the role contentinfo-->
+        <footer  role="contentinfo">
           <!--use grid to set the footer that contains social media and contact information -->
           <div class="container-fluid">
-              <div class="container-social=media">
+            <!--improve accesibility by using the role grid-->
+              <div role="grid" class="container-social=media">
                   <div class="row">
                       <div class="col">
                           <a href="https://www.instagram.com/" target="_blank" class="btn-social btn-behance"><i class="fa-brands fa-square-instagram"></i></a>
@@ -86,9 +99,9 @@
                       </div>
                   </div>
               </div>
-              <div class="col text-center contact-box">
-                  <p>aldanasabrina94@gmail.com</p>
-              <p>343-297-4555</p>
+              <div class="col text-center contact-box" itemscope itemtype="https://schema.org/Person">
+                <p itemprop="email">aldanasabrina94@gmail.com</p>
+                <p itemprop="telephone">343-297-4555</p>
               </div>
             </div>
       </footer>

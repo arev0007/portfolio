@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
 <body>
+    <!--creates a container box for styling purposes-->
     <div class="container-xl services-page">
+      <!-- creates skip links -->
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+      </ul>
         <header>
             <!-- Add a title--> 
             <h1>Services</h1>
-            <nav class="navbar navbar-expand-md" style="background-color: #ED7409;">
+            <!-- **** Creates navbar using bootstrap **** -->
+            <!--improve accesibility by using the role navigation and aria-->
+            <nav role="navigation" class="navbar navbar-expand-md" style="background-color: #ED7409;">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,91 +49,64 @@
                   </div>
                 </div>
               </nav>
-            <!-- Add an image as a banner--> 
-            <div class="banner">
+            <!-- **** Banner **** -->
+            <!--improve accesibility by using the role banner-->
+            <div role="banner" class="banner">
                 <img class="w-100"  src="images/services/pexels-anna-nekrashevich-7552373-services-banner.jpg" alt="papers">
             </div>
         </header>
 
 
-        <!--create a grid to create services content -->
-        <div class="container text-center">
-          <div class="row">
-            <div class="col img-digital">
-              <img class="w-50" src="images/services/pexels-cottonbro-3584994-services-digitalgraphic.jpg" alt="computer">
-            </div>
-            <div class="col text-digital">
-              <h2>Digital Graphic</h2>
-              <!--Addd content as headling 3 -->
-              <h3>Logo Design</h3>
-              <h3>Visual Experimentation</h3>
-              <h3>App Concept</h3> 
-            </div>
-            <div class="col text-video">
-              <h2>Videography</h2>
-              <h3>Cinematic Art</h3>
-              <h3>Creative Branding & Advertisement</h3>
-              <h3>Motion Design</h3>
-            </div>
-            <div class="col img-video">
-              <img src="images/services/pexels-md-iftekhar-uddin-emon-403495-servicesvideography.jpg" alt="camera">
-            </div>
-            </div>
+           <!--create a grid to create services content -->
+           <!--improve accesibility by using the role grid-->
+            <div role="grid" class="container services-box">
+              <!--digital graphic -->
+              <div class="row">
+                <div class="col img-digital">
+                  <img class="w-50" src="images/services/pexels-cottonbro-3584994-services-digitalgraphic.jpg" alt="computer">
+              </div>
+              <div class="col text-digital">
+                <h2>Digital Graphic</h2>
+                <!--Addd content as headling 3 -->
+                <h3>Logo Design</h3>
+                <h3>Visual Experimentation</h3>
+                <h3>App Concept</h3>
+              </div>
+              </div>
+              <!--videography--> 
+              <div class="row">
+                <div class="col text-video">
+                <h2>Videography</h2>
+                <h3>Cinematic Art</h3>
+                <h3>Creative Branding & Advertisement</h3>
+                <h3>Motion Design</h3>
+                </div>
+                <div class="col img-video">
+                  <img class="w-50" src="images/services/pexels-md-iftekhar-uddin-emon-403495-servicesvideography.jpg" alt="camera">
+                </div>
+              </div>
+              <!--potography-->
+              <div class="row">
+                <div class="col img-pht">
+                  <img class="w-50" src="images/services/pexels-pixabay-326316-services-photography.jpg" alt="lens">
+              </div>
+              <div class="col text-pht">
+                <!--Add titles as h2 -->
+                <h2>Portrait</h2>
+                <!--Addd content as headling 3 -->
+                <h3>Events</h3>
+                <h3>Art</h3>
+              </div>
+              </div>
+              </div>
 
-
-
-
-
-
-        <!--creates a digital graphic box that contains an image and text -->
-        <div class=" digital-graphic-box">
-            <!--creates an image box for styling purposes-->
-            <div class="img-digital">
-                <img class="w-50" src="images/services/pexels-cottonbro-3584994-services-digitalgraphic.jpg" alt="computer">
-            </div>
-            <!--creates a text box for styling purposes -->
-            <div class="text-digital">
-            <!--Add titles as h2 -->
-            <h2>Digital Graphic</h2>
-            <!--Addd content as headling 3 -->
-            <h3>Logo Design</h3>
-            <h3>Visual Experimentation</h3>
-            <h3>App Concept</h3> 
-            </div>
-        </div>
-        <!--creates a video box that contains image and text  -->
-        <div class="video-box">
-            <!--creates an image box for styling purposes-->
-            <div class="img-video">
-                <img src="images/services/pexels-md-iftekhar-uddin-emon-403495-servicesvideography.jpg" alt="camera">
-            </div>
-            <!--creates a text box for styling purposes -->
-            <div class="text-video">
-            <h2>Videography</h2>
-            <h3>Cinematic Art</h3>
-            <h3>Creative Branding & Advertisement</h3>
-            <h3>Motion Design</h3> 
-            </div>
-        </div>
-        <div class="photography-box">
-            <!--creates an image box for styling purposes-->
-            <div class="img-pht">
-                <img src="images/services/pexels-pixabay-326316-services-photography.jpg" alt="lens">
-            </div>
-            <!--creates a text box for styling purposes -->
-            <div class="text-pht">
-            <!--Add titles as h2 -->
-            <h2>Portrait</h2>
-            <!--Addd content as headling 3 -->
-            <h3>Events</h3>
-            <h3>Art</h3>
-            </div>
-        </div>
-
-        <footer>
+      
+         <!--improve accesibility by using the role contentinfo-->     
+        <footer  role="contentinfo">
           <!--use grid to set the footer that contains social media and contact information -->
           <div class="container-fluid">
-              <div class="container-social=media">
+            <!--improve accesibility by using the role grid-->
+              <div role="grid" class="container-social=media">
                   <div class="row">
                       <div class="col">
                           <a href="https://www.instagram.com/" target="_blank" class="btn-social btn-behance"><i class="fa-brands fa-square-instagram"></i></a>
@@ -142,13 +123,13 @@
                       </div>
                   </div>
               </div>
-              <div class="col text-center contact-box">
-                  <p>aldanasabrina94@gmail.com</p>
-              <p>343-297-4555</p>
+              <div class="col text-center contact-box" itemscope itemtype="https://schema.org/Person">
+                <p itemprop="email">aldanasabrina94@gmail.com</p>
+                <p itemprop="telephone">343-297-4555</p>
               </div>
             </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>
