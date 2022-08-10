@@ -1,4 +1,205 @@
-.home-page .navbar{
+:root {
+    --bs-yellow: #ffc107;
+    --bs-orange: #fd7e14;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-dark: #212529;
+    --bs-body-bg: #fff;
+    --bs-link-color: #4b4a46;
+  }
+
+
+/* Set specific background for each page*/
+.home-page .navbar, footer{
     background-color: #F5D61A;
 }
+.services-page .navbar, footer{
+    background-color: #ED7409;
+}
+.about-page .navbar, footer{
+    background-color: #D63440;
+}
+.creative-page .navbar, footer{
+    background-color: #607FCC;
+}
+.contact-page .navbar, footer{
+    background-color: #E89C1D;
+}
 
+/* Set heading 1*/
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    text-transform:uppercase;
+    font-size: 2.5rem;
+}
+/* Set heading 2 and 3*/
+h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* Set font of the paragraphs*/
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+/*  set text, font, and size of the menu navigation*/
+nav li a{
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 480px)
+{
+  /* Adjust the logo for mobile screen*/
+    .logo{
+        width: auto;
+        height: 200px;
+        padding: 40px;
+        margin-left: 0;
+        text-align: left;
+        position: relative;
+        right: 50px;;
+        
+    }
+    /* the menu items will appear in the middle of the screen*/
+    nav li a{
+        text-align: center;
+        border: none;
+    }
+
+    .banner{
+       display: none;
+    }
+
+    /* Home*/
+    /* */
+    .about-container, .services-container, .creative-container{
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .about-text p{
+     position: relative;
+     top:320px;
+     text-align: left;
+
+    }
+    .about-img{
+        max-width: 100%;
+        height: 250px;
+        margin-top:0%;
+    }
+    .services-container{
+        width: 100%;
+    }
+    .services-box{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        
+    }
+    .digital, .ux, .photography, .videography, .wallpaper{
+        padding:5px;
+        text-align: center;
+    }
+    .services-box img{
+        padding: 10px;
+        width: 90%;
+        height: 180px;
+        line-height: 15px;
+        font-size: 5px;
+        
+    }
+
+    .creative-container{
+        margin-top: 0%;
+        margin-left: 15px;
+    }
+
+    .carousel-item img{
+        width: 98%;
+        height: 230px;
+        opacity: 0.9;
+    }
+    
+    .container-social-media .row{
+        display: inline-flex;
+        font-size: 1.5rem;
+    }
+    .container-social-media i{
+      color: var(--bs-black);
+        }
+    
+    .contact-box{
+       margin-left: 15px;
+       position: relative;
+       left: 85px;
+       bottom: 30px;
+    }
+    .contact-box p{
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--bs-black);
+    }
+    .contact-box h4{
+        color: var(--bs-black);
+
+    }
+
+    /*Services*/
+
+    #main-content{
+
+    }
+
+    .services-content{
+        margin: 15px;
+    }
+    .services-content img{
+        display: none;
+    }
+    .services-content h2,h3{
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    .services-content h2{
+        font-size: 2rem;
+        font-weight: bold;
+        
+    }
+    .services-content h3{
+        font-size: 1.5rem;
+        color:#F5D61A;
+        font-weight: 900;
+    }
+    .text-digital{
+        position: relative;
+        right: 120px;
+    }
+    .text-video{
+        position: relative;
+        left: 100px;
+
+    }
+    .text-pht{
+        position:relative;
+        right:90px;
+
+    }
+
+    .services-content h3:last-child{
+        color:#D5B722;
+    }
+
+
+
+}
