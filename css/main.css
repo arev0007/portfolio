@@ -265,6 +265,7 @@ nav li a{
 .text-digital, .text-video, .text-pht{
     width: 100%;
 }
+/****About****/
 
 /****Creative****/
 
@@ -317,7 +318,7 @@ nav li a{
 }
 .img-box img{
     width: 100%;
-    height: 510px;
+    height: 550px;
 }
 .about-text h2{
     margin-top: 30%;
@@ -408,7 +409,7 @@ footer{
  /****Creative****/
  .img-ma, .img-sound{
     margin: 30px;
-    padding: 15px;
+   
 }
 .img-ma img{
     width: 100%;
@@ -418,7 +419,7 @@ footer{
 .img-sound img{
     width: 100%;
     height: 250px;
-    margin: 10px;    
+    margin: 10px;
 }
 .img-ma img:hover, .img-sound img:hover {
     opacity: 0.7;
@@ -431,13 +432,14 @@ footer{
  /****About****/
 
  #about{
-    margin: 20px;
+    margin: 10px;
     padding: 50px;
  }
 
  .about-image{
     opacity: 0.5;
     border-radius: 20px;
+    height: 800px;
  }
 
  .text-content{
