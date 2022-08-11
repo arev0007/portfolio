@@ -5,6 +5,7 @@
     --bs-pink: #d63384;
     --bs-black: #000;
     --bs-white: #fff;
+    --bs-gray-800: #343a40;
   }
 
 /* Add style to the skip links */
@@ -30,20 +31,20 @@
     width: 100%;
   }
 /* Set specific background for each page*/
-.home-page .navbar, footer{
+.home-page .navbar, .footer-home{
     width: 100%;
     background-color: #F5D61A;
 }
-.services-page .navbar, footer{
+.services-page .navbar, .footer-serv{
     background-color: #ED7409;
 }
-.about-page .navbar, footer{
+.about-page .navbar, .footer-about{
     background-color: #D63440;
 }
-.creative-page .navbar, footer{
+.creative-page .navbar, .footer-creative{
     background-color: #607FCC;
 }
-.contact-page .navbar, footer{
+.contact-page .navbar, .footer-contact{
     background-color: #E89C1D;
 }
 
@@ -82,163 +83,18 @@ nav li a{
     right: 50px;;
     
 }
-.about-container, .services-container, .creative-container{
-    padding: 25px;
-    margin-bottom: 40px;
-}
 
-/********************** Mobile*******************************************/
-@media screen and (max-width: 480px){
-h1{
-    font-size: 2rem;
-}
-/* the menu items will appear in the middle of the screen*/
-nav li a{
-    text-align: center;
-    border: none;
-}
-
-.banner{
-    display: none;
-}
-
-/* Home*/
-/* */
-
-.about-text p{
-    position: relative;
-    top:320px;
-    text-align: left;
-
-}
-.about-img{
-    width: 100%;
-    height: 250px;
-    margin-top:0%;
-}
-.services-container{
-    width: 100%;
-}
-.services-box{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    
-}
-.digital, .ux, .photography, .videography, .wallpaper{
-    padding:5px;
-    text-align: center;
-}
-.services-box img{
-    padding: 10px;
-    width: 90%;
-    height: 180px;
-    line-height: 15px;
-    font-size: 5px;
-    
-}
-
-.creative-container{
-    margin-top: 0%;
-    margin-left: 15px;
-}
-
-.carousel-item img{
-    width: 98%;
-    height: 230px;
-    opacity: 0.9;
-}
-
-.container-social-media .row{
-    display: inline-flex;
-    font-size: 1.5rem;
-}
-.container-social-media i{
-    color: var(--bs-black);
-    }
-
-.contact-box{
-    margin-left: 15px;
-    position: relative;
-    left: 85px;
-    bottom: 30px;
-}
-.contact-box p{
-    font-size: 12px;
-    font-weight: bold;
-    color: var(--bs-black);
-}
-.contact-box h4{
-    color: var(--bs-black);
-}
-
-/*Services*/
-
-.services-content{
-    margin: 15px;
-}
-.services-content img{
-    display: none;
-}
-.services-content h2,h3{
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-.services-content h2{
-    font-size: 2rem;
-    font-weight: bold;
-}
+/* Change the colour of the headline 3*/
 .services-content h3{
-    font-size: 1.5rem;
     color:#F5D61A;
-    font-weight: 900;
-}
-.text-digital{
-    position: relative;
-    right: 120px;
-}
-.text-video{
-    position: relative;
-    left: 100px;
-}
-.text-pht{
-    position:relative;
-    right:90px;
-}
-.text-digital, .text-video, .text-pht{
-    width: 100%;
 }
 .services-content h3:last-child{
     color:#D5B722;
 }
 
-/*Creative*/
 .multimedia-box h2, .sound-motion-box h2{
     text-align: center;
 }
-.img-ma, .img-sound{
-    margin: 30px;
-    padding: 15px;
-}
-
-.img-sound img{
-    width: 100%;
-    height: 250px;
-    margin: 10px;    
-}
-
-.img-ma img{
-    width: 100%;
-    height: 250px;
-    margin: 10px;    
-}
-
-.img-ma img:hover, .img-sound img:hover {
-    opacity: 0.7;
-  }
-
-/*Contact*/
 
 form{
     background-color: var(--bs-black);
@@ -267,10 +123,10 @@ form button[type="submit"] {
     padding: 10px;
     font-size: 15px;
   }
-  #contact-form button[type="submit"]:active {
+#contact-form button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
   }
- #contact-form input:focus,
+#contact-form input:focus,
 #contact-form textarea:focus {
     outline: 0;
     border: 1px solid #aaa;
@@ -287,13 +143,166 @@ form h2,label{
     padding:10px;
 }
 
+/********************** Mobile*******************************************/
+@media screen and (max-width: 480px){
+/****Home****/
+ h1{
+    font-size: 2rem;
+}
+/* the menu items will appear in the middle of the screen*/
+nav li a{
+    text-align: center;
+    border: none;
+}
+
+.banner{
+    display: none;
+}
+.about-container, .services-container, .creative-container{
+    padding: 25px;
+    margin-bottom: 40px;
+}
+.about-text p{
+    position: relative;
+    top:320px;
+    text-align: left;
+}
+.about-img{
+    width: 100%;
+    height: 250px;
+    margin-top:0%;
+}
+.services-container{
+    width: 100%;
+}
+.services-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.digital, .ux, .photography, .videography, .wallpaper{
+    padding:5px;
+    text-align: center;
+}
+.services-box img{
+    padding: 10px;
+    width: 90%;
+    height: 180px;
+    line-height: 15px;
+    font-size: 5px;
+}
+
+.creative-container{
+    margin-top: 0%;
+    margin-left: 15px;
+}
+
+.carousel-item img{
+    width: 98%;
+    height: 230px;
+    opacity: 0.9;
+}
+
+.container-social-media .row{
+    display: inline-flex;
+    font-size: 1.5rem;
+}
+.container-social-media i{
+    color: var(--bs-black);
+ }
+
+.contact-box{
+    margin-left: 15px;
+    position: relative;
+    left: 85px;
+    bottom: 30px;
+}
+.contact-box p{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--bs-black);
+}
+.contact-box h4{
+    color: var(--bs-black);
 }
 
 
+/****Services****/
+
+.services-content{
+    margin: 15px;
+}
+.services-content img{
+    display: none;
+}
+.services-content h2,h3{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.services-content h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.services-content h3{
+    font-size: 1.5rem;
+    color:#F5D61A;
+    font-weight: 900;
+}
+
+.text-digital{
+    position: relative;
+    right: 120px;
+}
+.text-video{
+    position: relative;
+    left: 100px;
+}
+.text-pht{
+    position:relative;
+    right:90px;
+}
+.text-digital, .text-video, .text-pht{
+    width: 100%;
+}
+
+/****Creative****/
+
+.img-ma, .img-sound{
+    margin: 30px;
+    padding: 15px;
+}
+
+.img-sound img{
+    width: 100%;
+    height: 250px;
+    margin: 10px;    
+}
+
+.img-ma img{
+    width: 100%;
+    height: 250px;
+    margin: 10px;    
+}
+
+.img-ma img:hover, .img-sound img:hover {
+    opacity: 0.7;
+}
+
+
+}
+
+
+/********************** Desktop *******************************************/
+
+
 /* Adding a media-query for 1200px and above */
-@media screen and (min-width: 900px) and (max-width: 1200px){
+@media screen and (min-width: 760px){
 
     /*Home*/
+.container-fluid{
+    height: 90px;
+}
  .banner{
     width: 100%;
  }
@@ -303,12 +312,12 @@ form h2,label{
 }
  /* About section*/
 .about-container{
-        padding: 30px;
-        margin-bottom: 30px;    
+    padding: 30px;
+    margin-bottom: 30px;    
 }
 .img-box img{
     width: 100%;
-    height: 450px;
+    height: 510px;
 }
 .about-text h2{
     margin-top: 30%;
@@ -329,6 +338,9 @@ h2{
     left: 50%;
 }
 
+.headline-box{
+    margin-bottom: 50px;
+}
 .services-box{
     margin: 10px;
     padding: 20px;
@@ -343,13 +355,126 @@ h2{
 
 .carousel-inner img{
     width: 100%;
-    height: 500px;
-}
-        
+    height: 590px;
 }
 
+.carousel-text{
+    background-color: rgb(24, 26, 26);
+    opacity: 0.5;
+}
+
+footer{
+    height: 125px;
+}
+
+.container-social-media .row{
+    display: inline-flex;
+    font-size: 2rem;
+}
+.container-social-media i{
+    color: var(--bs-black);
+    }
+
+.contact-box{
+    margin-left: 15px;
+    position: relative;
+    left: 40px;
+    bottom: 150px;
+}
+.contact-box p{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--bs-black);
+}
+.contact-box h4{
+    color: var(--bs-black);
+}
 
 
+
+ /****Services****/
+ #services{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding: 15px;
+ }
+
+ .services-content h3{
+
+    margin-top: 30px;
+
+ }
+
+ /****Creative****/
+ .img-ma, .img-sound{
+    margin: 30px;
+    padding: 15px;
+}
+.img-ma img{
+    width: 100%;
+    height: 250px;
+    margin: 10px;    
+}
+.img-sound img{
+    width: 100%;
+    height: 250px;
+    margin: 10px;    
+}
+.img-ma img:hover, .img-sound img:hover {
+    opacity: 0.7;
+}
+
+.img-ma, .img-sound{
+    display: flex;
+}
+
+ /****About****/
+
+ #about{
+    margin: 20px;
+    padding: 50px;
+ }
+
+ .about-img{
+    opacity: 0.5;
+    border-radius: 20px;
+    
+ }
+
+ .text-content{
+    width: 600px;
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+ }
+ .text-content h2{
+    font-size: 3rem;
+    color: var(--bs-gray-800);
+    font-family: 'Poppins', sans-serif;
+    text-transform:none;
+    font-weight: bold;
+    margin-left: 15px;
+ }
+  
+ .about-text{
+    padding: 15px;
+    font-size: 1.5rem;
+ }
+ 
+ .about-content{
+    height: 800px;
+    
+ }
+
+ /****Contact****/
+
+.contact{
+    margin-left: 30%;
+}
+
+
+}
 
 
     
