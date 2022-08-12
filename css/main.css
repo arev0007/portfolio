@@ -66,6 +66,7 @@ p{
 }
 .container-fluid{
     width: 100%;
+    
 }
 /*  set text, font, and size of the menu navigation*/
 nav li a{
@@ -107,19 +108,25 @@ form{
     position: relative;
     padding: 40px;
 }
+
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form input[type="text"],
 #contact textarea,
 #contact button[type="submit"] {
     font: 400 12px/16px 'Poppins', sans-serif;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 15px;
 }
 form button[type="submit"] {
     cursor: pointer;
     border: none;
     background: #f0f5f0;
     color: var(--bs-black);
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     font-size: 15px;
   }
@@ -252,19 +259,56 @@ nav li a{
 
 .text-digital{
     position: relative;
-    right: 120px;
+    right: 100px;
 }
+    
 .text-video{
     position: relative;
     left: 100px;
 }
 .text-pht{
     position:relative;
-    right:90px;
+    right:70px;
 }
 .text-digital, .text-video, .text-pht{
     width: 100%;
 }
+/****About****/
+.about-content{
+    margin-top: 150px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+.about-image{
+    width: 100%;
+    height: 580px;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.text-content{
+    width: 420px;
+    position: relative;
+    bottom: 180px;
+    left: 5px;
+ }
+ .text-content h2{
+    font-size: 1.5rem;
+    color: var(--bs-gray-800);
+    font-family: 'Poppins', sans-serif;
+    text-transform:none;
+    font-weight: bold;
+    margin-left: 15px;
+ }
+  
+ .about-text{
+    padding: 10px;
+    font-size: 1rem;
+ }
+ 
+ 
+
+
 /****Creative****/
 
 .img-ma, .img-sound{
@@ -301,6 +345,9 @@ nav li a{
     /*Home*/
 .nav{
     height: 90px;
+}
+.menu{
+    margin: 20px;
 }
  .banner{
     width: 100%;
@@ -470,6 +517,9 @@ footer{
     margin-left: 30%;
 }
 
+footer{
+    margin-bottom: 0;
+}
 
 }
 
